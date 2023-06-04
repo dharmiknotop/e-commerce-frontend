@@ -16,7 +16,7 @@ const Homescreen = () => {
   const getProducts = async () => {
     try {
       const res = await axios.get(
-        'https://e-commerce-api-23.onrender.com//api/v1/products/homepage'
+        'https://e-commerce-api-23.onrender.com/api/v1/products/homepage'
       );
 
       setProductsList([...res.data.products]);

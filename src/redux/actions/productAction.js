@@ -29,13 +29,13 @@ export const getProduct =
     try {
       dispatch({ type: ALL_PRODUCT_REQUEST });
 
-      let link = `https://e-commerce-api-23.onrender.com//api/v1/products?keyword=${keyword}&price[gte]=${price[0]}&price[lte]=${price[1]}`;
+      let link = `https://e-commerce-api-23.onrender.com/api/v1/products?keyword=${keyword}&price[gte]=${price[0]}&price[lte]=${price[1]}`;
 
       if (category) {
-        link = `https://e-commerce-api-23.onrender.com//api/v1/products?keyword=${keyword}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}`;
+        link = `https://e-commerce-api-23.onrender.com/api/v1/products?keyword=${keyword}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}`;
       }
       if (category === 'all') {
-        link = `https://e-commerce-api-23.onrender.com//api/v1/products?keyword=${keyword}&price[gte]=${price[0]}&price[lte]=${price[1]}`;
+        link = `https://e-commerce-api-23.onrender.com/api/v1/products?keyword=${keyword}&price[gte]=${price[0]}&price[lte]=${price[1]}`;
       }
 
       const { data } = await axios.get(link);
@@ -57,7 +57,7 @@ export const getProductDetails = (id) => async (dispatch) => {
     dispatch({ type: PRODUCT_DETAILS_REQUEST });
 
     const { data } = await axios.get(
-      `https://e-commerce-api-23.onrender.com//api/v1/product/${id}`
+      `https://e-commerce-api-23.onrender.com/api/v1/product/${id}`
     );
 
     dispatch({
@@ -76,7 +76,7 @@ export const getAdminProduct = () => async (dispatch) => {
     dispatch({ type: ADMIN_PRODUCT_REQUEST });
 
     const { data } = await axios.get(
-      'https://e-commerce-api-23.onrender.com//api/v1/admin/products'
+      'https://e-commerce-api-23.onrender.com/api/v1/admin/products'
     );
 
     dispatch({
@@ -101,7 +101,7 @@ export const createProduct = (productData) => async (dispatch) => {
     console.log('this is first 2 ');
     console.log(productData);
     const { data } = await axios.post(
-      `https://e-commerce-api-23.onrender.com//api/v1/admin/product/new`,
+      `https://e-commerce-api-23.onrender.com/api/v1/admin/product/new`,
       productData,
       config
     );
@@ -131,7 +131,7 @@ export const updateProduct = (id, productData) => async (dispatch) => {
     };
 
     const { data } = await axios.put(
-      `https://e-commerce-api-23.onrender.com//api/v1/admin/product/${id}`,
+      `https://e-commerce-api-23.onrender.com/api/v1/admin/product/${id}`,
       productData,
       config
     );
@@ -154,7 +154,7 @@ export const deleteProduct = (id) => async (dispatch) => {
     dispatch({ type: DELETE_PRODUCT_REQUEST });
 
     const { data } = await axios.delete(
-      `https://e-commerce-api-23.onrender.com//api/v1/admin/product/${id}`
+      `https://e-commerce-api-23.onrender.com/api/v1/admin/product/${id}`
     );
 
     dispatch({
