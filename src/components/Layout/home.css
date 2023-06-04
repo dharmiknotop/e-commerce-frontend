@@ -1,0 +1,162 @@
+.Home {
+  height: 100vh;
+  display: flex;
+}
+.TitleImgDiv {
+  position: absolute;
+  width: 40vw;
+  height: 50vh;
+  top: 25vh;
+  left: 15vw;
+  z-index: 1201;
+}
+.TitleImgDiv > div {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 7px 29px 49px 0px rgb(0, 0, 0, 0.5);
+}
+.TitleName {
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.LeftDiv {
+  background-color: #163246;
+  width: 30%;
+  height: 100%;
+  position: relative;
+  z-index: 111;
+}
+.LeftDiv > div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.LeftDiv > div > div > a {
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+.LeftDiv > div > div {
+  margin: 1rem 0.5rem 0.5rem 1rem;
+
+  letter-spacing: 2px;
+}
+.LeftDiv > div > div > a:hover {
+  color: cyan;
+}
+.RightDiv {
+  position: relative;
+  background-color: white;
+  width: 70%;
+
+  z-index: 12;
+}
+.Title {
+  position: absolute;
+  height: 40%;
+  left: 30vw;
+  top: 20vh;
+  z-index: 2;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Title h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.TransitionDiv {
+  width: 0%;
+  height: 100vh;
+  position: absolute;
+  background-color: #163246;
+  animation: go-left 2s cubic-bezier(0.74, 0.86, 0.4, 0.9) forwards;
+  animation-delay: 1s;
+  left: 0;
+  z-index: 100;
+}
+.trying {
+  padding-top: 1rem;
+}
+.Logo {
+  margin-left: 1rem;
+  background-color: white;
+  width: 10vmax;
+}
+.Logo > img {
+  background-color: white;
+}
+.Home img {
+  width: 100%;
+  height: 100%;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn {
+  transition: 0.5s all ease;
+}
+.Typewriter {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+@media only screen and (max-width: 400px) {
+  .FeaturedProducts {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .Title h1 {
+    font-size: 2rem !important;
+    margin-bottom: 0.2;
+  }
+  .Typewriter {
+    font-size: 1rem !important;
+  }
+  .SaleContent > span:nth-child(1) {
+    font-size: 2rem;
+  }
+  .SaleContent > span:last-child {
+    font-size: 0.5remx;
+  }
+  .newProduct {
+    height: 30vmax;
+  }
+  .LeftDiv > div > div > a {
+    font-size: 0.5rem;
+  }
+  .theBack > div > a > span {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .theBack > div > span:last-child {
+    font-size: 0.6rem;
+  }
+  .BugFixed {
+    text-align: center;
+  }
+}
+@keyframes go-left {
+  0% {
+    left: 30%;
+    width: 0%;
+  }
+  50% {
+    left: 31%;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0;
+  }
+}

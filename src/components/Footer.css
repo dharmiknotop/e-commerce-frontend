@@ -1,0 +1,68 @@
+.Footer {
+  width: 100%;
+  display: grid;
+  margin-top: 5vh;
+  grid-template-columns: 1.2fr 0.8fr 1fr 1fr;
+  background-color: #163246;
+
+  position: relative;
+  padding-top: 15px;
+}
+.firstdiv > div {
+  text-align: center;
+  font: 500;
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+}
+.firstdiv > span {
+  text-align: center;
+  font: 500 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  color: white;
+}
+
+.FooterItem {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.seconddiv > div > a {
+  margin: 0.5rem;
+  transition: 0.2s all ease-in-out;
+  display: flex;
+  color: white;
+
+  align-items: center;
+}
+.Footer > div > img {
+  width: 100%;
+  margin: auto;
+}
+.FooterTitle {
+  width: 100%;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  color: white;
+}
+.seconddiv > div > a:hover {
+  transform: translateX(2%);
+  color: cyan;
+}
+
+@media only screen and (max-width: 400px) {
+  .Footer {
+    font-size: 0.7rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .FooterItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .FooterTitle {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,41 @@
+.ProductScreen {
+  margin-top: 12vh;
+}
+.productImage > img {
+  width: 100%;
+}
+
+.categoryBox {
+  list-style: none;
+  padding-left: 0 !important;
+}
+.categoryBox > li:hover {
+  cursor: pointer;
+  color: var(--text-color);
+}
+.quantity1 {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.quantity1 > button {
+  outline: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  color: white;
+  transition: 0.5s;
+  background: #288ed6;
+}
+.quantity1 > button:hover {
+  background: #1a6499;
+}
+.quantity1 > input {
+  text-align: center;
+  margin: 2px;
+  border: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  outline: none;
+  background-color: #fafafa;
+}

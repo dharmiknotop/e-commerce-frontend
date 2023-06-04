@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+ul {
+  list-style: none;
+}
+:root {
+  --text-color: #3f5c71;
+
+  --background: linear-gradient(to left, #18527f, #2090e1, #0090ff);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  transition: 0.3s all ease-in-out;
+  color: var(--text-color);
+}
+.Delete:hover {
+  color: red;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.Typewriter {
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
+
+.mainclr {
+  color: var(--text-color);
+}
+.primaryFont {
+  font-family: 'Ubuntu', sans-serif;
+}
+.secondaryFont {
+  font-family: 'Hubballi', cursive;
+}
+.mainfont {
+  font-family: 'Roboto';
+}
+.DivideDiv,
+.DivideDiv3 {
+  display: grid;
+}
+.DivideDiv3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.DivideDiv {
+  grid-template-columns: 1fr 1fr;
+}

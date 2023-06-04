@@ -1,0 +1,47 @@
+.orderItems {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  background-color: white;
+  margin: 10px;
+  box-shadow: 0 10px 20px rgba(128, 128, 128, 0.329);
+}
+/* .OrderDetails {
+  overflow-x: scroll;
+} */
+.orderItems:hover {
+  transition: 0.2s;
+  background-color: #d9d8d84f;
+}
+
+.orderTitle {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  color: #868686;
+
+  font-family: 'Roboto';
+  text-align: center;
+  font-size: 1.2rem;
+}
+.text-gray > svg {
+  border-radius: 100%;
+  margin-right: 10px;
+  box-shadow: 0 0 20px yellow;
+}
+.text-green > svg {
+  border-radius: 100%;
+  margin-right: 10px;
+  box-shadow: 0 0 20px #16ff00;
+}
+.text-red > svg {
+  border-radius: 100%;
+  margin-right: 10px;
+  box-shadow: 0 0 20px red;
+}
+
+@media only screen and (max-width: 400px) {
+  .orderItems,
+  .orderTitle {
+    grid-template-columns: unset;
+  }
+}

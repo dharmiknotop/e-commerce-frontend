@@ -1,0 +1,23 @@
+.AdminProduct {
+  padding-left: 20vw;
+}
+.AdminItem {
+  text-align: center;
+  margin: auto;
+}
+.AdminPadding {
+  margin-right: 2vw;
+  margin-left: 17vw;
+}
+.orderTitle,
+.orderItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.orderTitle {
+  background-color: #e8f4ff;
+  color: #3f5c71;
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: 'Roboto';
+}

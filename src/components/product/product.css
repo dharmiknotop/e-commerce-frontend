@@ -1,0 +1,161 @@
+.CommonProduct > .DivideDiv {
+  grid-column-gap: 8px;
+  margin-bottom: 8px;
+}
+.CommonProduct > .DivideDiv3 {
+  grid-column-gap: 2px;
+}
+.firstProduct {
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7y68xiLnynENEP6AvG79GSoBlC0zTxXZShQ&usqp=CAU');
+}
+.SecondProduct {
+  background: url('https://res.cloudinary.com/dflwrsxue/image/upload/v1647417138/products/keutmrarstc3vkwumqp0.webp');
+}
+.ThirdProduct {
+  background: url('https://img.freepik.com/free-vector/sales-a5-flyer-with-photo-template_52683-65915.jpg');
+}
+.DivideDiv3 > .firstProduct {
+  background: url('https://res.cloudinary.com/dflwrsxue/image/upload/v1647417374/products/lmf39uwh8seqgfo9gkkm.webp');
+}
+.DivideDiv3 > .SecondProduct {
+  background: url('https://res.cloudinary.com/dflwrsxue/image/upload/v1648057902/products/youtube-thumbnail-template-design-d45e855a31739ec1f58b2d0ffb7013df_screen_2_be5vbo.webp');
+}
+.DivideDiv3 > .firstProduct {
+  background: url('https://res.cloudinary.com/dflwrsxue/image/upload/v1647417374/products/lmf39uwh8seqgfo9gkkm.webp');
+}
+.SecondProduct,
+.firstProduct,
+.ThirdProduct {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+}
+.SecondProduct:hover::after,
+.firstProduct:hover::after,
+.ThirdProduct:hover::after {
+  transition: 0.5s all ease-in-out;
+  background-color: #3f5c71a3;
+}
+
+.firstProduct::after,
+.SecondProduct::after,
+.ThirdProduct::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3f5c7152;
+}
+.firstProduct > a > button,
+.SecondProduct > a > button,
+.ThirdProduct > a > button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 111;
+}
+/* New Product*/
+.newProduct {
+  margin: 2rem 0;
+  width: 100%;
+  height: 25vmax;
+  background: url('https://www.seekpng.com/png/detail/105-1053240_impression-design-screen-printing-embroidery-palm-clipart-printing.png');
+
+  position: relative;
+}
+.newProduct::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #163246b8;
+  z-index: 50;
+}
+.SaleContent {
+  color: white;
+  text-align: center;
+}
+.SaleContent > div {
+  margin: 1rem;
+}
+.SaleContent > span:last-child {
+  font-size: 1.5rem;
+}
+.SaleContent > span:nth-child(1) {
+  font-size: 4rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.SaleContent {
+  position: relative;
+  z-index: 51;
+}
+.gridDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.newProduct > div > div > img {
+  width: 100%;
+  height: 100%;
+}
+.productName {
+  display: flex;
+  justify-content: space-between;
+  height: 5vmax;
+  margin: 1rem 0;
+}
+.Products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0.5rem 0.4rem;
+}
+@media only screen and (max-width: 360px) {
+  .FeaturedProducts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Title h1 {
+    font-size: 2rem !important;
+    margin-bottom: 0.2;
+  }
+  .Typewriter {
+    font-size: 1rem !important;
+  }
+  .SaleContent > span:nth-child(1) {
+    font-size: 2rem;
+  }
+  .SaleContent > span:last-child {
+    font-size: 0.5remx;
+  }
+  .newProduct {
+    height: 30vmax;
+  }
+  .theBack > div > a > span {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .theBack > div > span:last-child {
+    font-size: 0.6rem;
+  }
+  .BugFixed {
+    text-align: center;
+  }
+}
+.newProduct,
+.SecondProduct,
+.firstProduct,
+.ThirdProduct,
+.theBack,
+.DivideDiv3 > .firstProduct,
+.DivideDiv3 > .SecondProduct,
+.DivideDiv3 > .thirdProduct {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,107 @@
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30vw;
+  height: 100vh;
+  background-color: #163246;
+  z-index: 111111;
+  transform: translateX(-200%);
+  transition: all 0.5s ease-in-out;
+}
+.Navbar > div > img {
+  background-color: white;
+  border-radius: 100%;
+  padding: 1rem;
+  width: 8vmax;
+  height: 8vmax;
+}
+.details > svg {
+  color: cyan;
+  margin-right: 0.5rem;
+}
+.details,
+.category > div {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.category {
+  width: 100%;
+}
+.category > div {
+  justify-content: center;
+  padding: 1rem;
+}
+
+.category > div > svg {
+  color: cyan;
+  transition: 0.2s all ease-in-out;
+  margin-right: 0.5rem;
+  color: white;
+  margin-right: 0.5rem;
+}
+.category:hover > div > svg {
+  color: cyan;
+}
+.category:hover > div {
+  background-color: #2c404fa1;
+  cursor: pointer;
+}
+
+.cross > svg {
+  margin: 0.8rem;
+  position: absolute;
+  cursor: pointer;
+
+  top: 0;
+  right: 0;
+}
+.Navbar > div > img {
+  margin-top: 1rem;
+}
+.displayNavbar {
+  transform: translateX(0%);
+}
+.ToggleButton {
+  z-index: 112;
+  cursor: pointer;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+}
+nav {
+  width: 100vw;
+}
+.TopNavar > div > div {
+  margin: 1rem;
+}
+.TopNavar > div > div > a {
+  color: white;
+}
+.TopNavar > div > div > a:hover {
+  color: cyan;
+}
+.TopNavar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #163246ad;
+  transition: 0.5s all ease-in-out;
+  z-index: 99999;
+}
+.active > div > div {
+  color: black;
+}
+.active {
+  background-color: transparent;
+  transition: 0.5s all ease-in-out;
+}
+@media only screen and (max-width: 400px) {
+  .Navbar {
+    width: 100vw;
+  }
+}
